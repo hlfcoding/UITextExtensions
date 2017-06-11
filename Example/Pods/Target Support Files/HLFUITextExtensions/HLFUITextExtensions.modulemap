@@ -1,0 +1,6 @@
+framework module HLFUITextExtensions {
+  umbrella header "HLFUITextExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

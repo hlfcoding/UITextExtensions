@@ -1,0 +1,16 @@
+PODS:
+  - HLFUITextExtensions (0.0.1)
+
+DEPENDENCIES:
+  - HLFUITextExtensions (from `../`)
+
+EXTERNAL SOURCES:
+  HLFUITextExtensions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HLFUITextExtensions: c020a5baef306183e7b8810bf95f9ebc8fd862e3
+
+PODFILE CHECKSUM: 790e23251abdbd49219176aac7907a623e6fdab6
+
+COCOAPODS: 1.2.1

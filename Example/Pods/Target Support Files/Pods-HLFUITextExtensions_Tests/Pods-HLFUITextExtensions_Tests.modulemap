@@ -1,0 +1,6 @@
+framework module Pods_HLFUITextExtensions_Tests {
+  umbrella header "Pods-HLFUITextExtensions_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

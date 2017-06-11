@@ -31,7 +31,7 @@
 		0B5855FA0E617A2D54D85A42 /* Pods-HLFUITextExtensions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLFUITextExtensions_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HLFUITextExtensions_Example/Pods-HLFUITextExtensions_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0D8A66D5E2125A1E1A7A60AD /* Pods_HLFUITextExtensions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLFUITextExtensions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A701F06A3E14C777B75B606 /* Pods-HLFUITextExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLFUITextExtensions_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HLFUITextExtensions_Tests/Pods-HLFUITextExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3F5B9D29EEC3FE1029050B71 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3F5B9D29EEC3FE1029050B71 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HLFUITextExtensions_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLFUITextExtensions_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		A585483E5EDB07922051BFDF /* Pods_HLFUITextExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLFUITextExtensions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0CD42A3FB71C2F8363F0145 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B0CD42A3FB71C2F8363F0145 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BBE1317B3D900EDE4D555099 /* Pods-HLFUITextExtensions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLFUITextExtensions_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HLFUITextExtensions_Example/Pods-HLFUITextExtensions_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D4A633ECB060E21640D3CB69 /* Pods-HLFUITextExtensions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLFUITextExtensions_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HLFUITextExtensions_Tests/Pods-HLFUITextExtensions_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F111DDE998B95586265F9D3C /* HLFUITextExtensions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HLFUITextExtensions.podspec; path = ../HLFUITextExtensions.podspec; sourceTree = "<group>"; };
+		F111DDE998B95586265F9D3C /* HLFUITextExtensions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HLFUITextExtensions.podspec; path = ../HLFUITextExtensions.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = G9TR83TNAE;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = G9TR83TNAE;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -443,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -483,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -496,6 +498,7 @@
 			baseConfigurationReference = 0B5855FA0E617A2D54D85A42 /* Pods-HLFUITextExtensions_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9TR83TNAE;
 				INFOPLIST_FILE = HLFUITextExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -510,6 +513,7 @@
 			baseConfigurationReference = BBE1317B3D900EDE4D555099 /* Pods-HLFUITextExtensions_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9TR83TNAE;
 				INFOPLIST_FILE = HLFUITextExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -523,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A701F06A3E14C777B75B606 /* Pods-HLFUITextExtensions_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = G9TR83TNAE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -543,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4A633ECB060E21640D3CB69 /* Pods-HLFUITextExtensions_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = G9TR83TNAE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
