@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HLFUITextExtensions_Example' do
+  pod 'HLFUITextExtensions', :path => '../'
+
+  target 'HLFUITextExtensions_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
