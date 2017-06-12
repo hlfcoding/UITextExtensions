@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E09A7B4EB33D8F6EFC8750950FD1E03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1B27048805E61DE14AD7C1B13F74BFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		20DD0FE7825F7AC2A8A4146B4660DEBA /* Pods-HLFUITextExtensions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 030FA0C74C2CC1E3433CE91A30FF58B2 /* Pods-HLFUITextExtensions_Tests-dummy.m */; };
-		49302720E4CC0DBEE7FDF63261A835A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		40F52370A282997E58A2CA8316DD776A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		49302720E4CC0DBEE7FDF63261A835A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		56BA8C6771644505DBFA4C0E70C5160D /* Pods-HLFUITextExtensions_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2006C909D2B3ACC6523FB775050F8843 /* Pods-HLFUITextExtensions_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A320DBA18E5CF82B82D9A63650749758 /* HLFUITextExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F947A320ABE9CD958CB4901BE144E /* HLFUITextExtensions-dummy.m */; };
-		B60BF2990096FDB138E47C8FB66CC22F /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226A77682890CC7E87D7FD5BB2A567D /* TextExtensions.swift */; };
+		595B4AF06A0B33870CF5FC68823A8CEB /* HLFUITextExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1EC739B4707B9DF0058449A60CCE90A /* HLFUITextExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88A385ED487799DC7A19218CA7C3790A /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226A77682890CC7E87D7FD5BB2A567D /* TextExtensions.swift */; };
 		C498169C95CC911D40340F6C1161BC05 /* Pods-HLFUITextExtensions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE01893490C6194E87563C28DF85D0C2 /* Pods-HLFUITextExtensions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9C46DCCDB20BCF6153362CAF55E97D3 /* HLFUITextExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F947A320ABE9CD958CB4901BE144E /* HLFUITextExtensions-dummy.m */; };
 		CB422354445E2F817736AFCDC3808186 /* Pods-HLFUITextExtensions_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8836E24824F1D65E7D0881F7B5E4AF8 /* Pods-HLFUITextExtensions_Example-dummy.m */; };
-		DD22C183B76847DA0B6569CF068FC2B2 /* HLFUITextExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1EC739B4707B9DF0058449A60CCE90A /* HLFUITextExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEA669D4E816B02CCDC3C9916E25BC7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DEA669D4E816B02CCDC3C9916E25BC7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +25,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 26523148561B036ACE0C071BAA39CA98;
+			remoteGlobalIDString = 3F51E52256C295DD79A73AC111F4FFF3;
 			remoteInfo = HLFUITextExtensions;
 		};
 /* End PBXContainerItemProxy section */
@@ -45,7 +46,6 @@
 		4927594D801C6DAA7DC293E55519BD52 /* Pods-HLFUITextExtensions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLFUITextExtensions_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5319F96D3168F606BBA27E8BBFEC0D8E /* Pods-HLFUITextExtensions_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLFUITextExtensions_Tests-resources.sh"; sourceTree = "<group>"; };
 		647A19442F9411EBFD3523AECABB5316 /* Pods-HLFUITextExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLFUITextExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7A3F947A320ABE9CD958CB4901BE144E /* HLFUITextExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HLFUITextExtensions-dummy.m"; sourceTree = "<group>"; };
 		7FE59A597014C99BB3F2087FC10918F3 /* Pods-HLFUITextExtensions_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLFUITextExtensions_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		8DE994628ADB4CCA490A7B90F381D113 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,9 +55,11 @@
 		AD61040D014D101AA06785AAE9BB7116 /* HLFUITextExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HLFUITextExtensions.framework; path = HLFUITextExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4925E81396BE60B66F902980225B7C8 /* HLFUITextExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HLFUITextExtensions-prefix.pch"; sourceTree = "<group>"; };
 		B5E481887FFD222A5A6BBEED0833C027 /* HLFUITextExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HLFUITextExtensions.xcconfig; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		CE8DD3BB7C1BB4BD24A32304F5762145 /* Pods-HLFUITextExtensions_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HLFUITextExtensions_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D1EC739B4707B9DF0058449A60CCE90A /* HLFUITextExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HLFUITextExtensions-umbrella.h"; sourceTree = "<group>"; };
 		D472315B14A8EDB006F409F11CD7DF67 /* Pods-HLFUITextExtensions_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLFUITextExtensions_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DCE9575DCF9EACB2C5D123AC3D1C55BE /* Pods-HLFUITextExtensions_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HLFUITextExtensions_Example.modulemap"; sourceTree = "<group>"; };
 		EE01893490C6194E87563C28DF85D0C2 /* Pods-HLFUITextExtensions_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HLFUITextExtensions_Example-umbrella.h"; sourceTree = "<group>"; };
 		F2060A941F0F5B098802E44636EFF07C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,11 +67,12 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		51D6F4D08FC459C31DBCB58C0FFED898 /* Frameworks */ = {
+		1767FCD8FCC1893FFAEEB2C2D79D73BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E09A7B4EB33D8F6EFC8750950FD1E03 /* Foundation.framework in Frameworks */,
+				40F52370A282997E58A2CA8316DD776A /* Foundation.framework in Frameworks */,
+				1B27048805E61DE14AD7C1B13F74BFC4 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +102,23 @@
 			);
 			name = Classes;
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		52856D79FC9807A4066549B674A4C9D3 /* Pods-HLFUITextExtensions_Tests */ = {
@@ -142,7 +162,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC9D88B070E77E4B858AA0C0B9F4EE74 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				F73C8C4C3AB4C399BCDF8BF8BA49E1B4 /* Products */,
 				6B0CC844E8F747B5235DC0B6072A7831 /* Targets Support Files */,
 			);
@@ -158,28 +178,12 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BC9D88B070E77E4B858AA0C0B9F4EE74 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
 				AD7569061D7568165E7EDBF95D7CAE27 /* HLFUITextExtensions */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		D5516B54AB4E0B7623DE1ED8426A88C7 /* Support Files */ = {
@@ -235,11 +239,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59600016840E18F8D945E85969779D4F /* Headers */ = {
+		74FE37B31BB6BEC92443DD977220C913 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD22C183B76847DA0B6569CF068FC2B2 /* HLFUITextExtensions-umbrella.h in Headers */,
+				595B4AF06A0B33870CF5FC68823A8CEB /* HLFUITextExtensions-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,13 +275,13 @@
 			productReference = 0ADA14B1EDD89105FEDC6911331A83B8 /* Pods_HLFUITextExtensions_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		26523148561B036ACE0C071BAA39CA98 /* HLFUITextExtensions */ = {
+		3F51E52256C295DD79A73AC111F4FFF3 /* HLFUITextExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C80836B2F244A3FE22763F2797E89389 /* Build configuration list for PBXNativeTarget "HLFUITextExtensions" */;
+			buildConfigurationList = A17FC257009E2A282D19E218A3960E15 /* Build configuration list for PBXNativeTarget "HLFUITextExtensions" */;
 			buildPhases = (
-				12D7EF175D5653F9260A95234D814DE4 /* Sources */,
-				51D6F4D08FC459C31DBCB58C0FFED898 /* Frameworks */,
-				59600016840E18F8D945E85969779D4F /* Headers */,
+				698050F882280238C5D4F7802B774084 /* Sources */,
+				1767FCD8FCC1893FFAEEB2C2D79D73BC /* Frameworks */,
+				74FE37B31BB6BEC92443DD977220C913 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -327,7 +331,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26523148561B036ACE0C071BAA39CA98 /* HLFUITextExtensions */,
+				3F51E52256C295DD79A73AC111F4FFF3 /* HLFUITextExtensions */,
 				E513773BD2992C9CF947425CC2A49822 /* Pods-HLFUITextExtensions_Example */,
 				02F770DD42564CF0CFBB00171991534A /* Pods-HLFUITextExtensions_Tests */,
 			);
@@ -335,20 +339,20 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		12D7EF175D5653F9260A95234D814DE4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A320DBA18E5CF82B82D9A63650749758 /* HLFUITextExtensions-dummy.m in Sources */,
-				B60BF2990096FDB138E47C8FB66CC22F /* TextExtensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4322AC2CE3A5F556711239F16BBD07E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				20DD0FE7825F7AC2A8A4146B4660DEBA /* Pods-HLFUITextExtensions_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		698050F882280238C5D4F7802B774084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C46DCCDB20BCF6153362CAF55E97D3 /* HLFUITextExtensions-dummy.m in Sources */,
+				88A385ED487799DC7A19218CA7C3790A /* TextExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +370,7 @@
 		4FE635D908FF30D4F3E8D8B881476966 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HLFUITextExtensions;
-			target = 26523148561B036ACE0C071BAA39CA98 /* HLFUITextExtensions */;
+			target = 3F51E52256C295DD79A73AC111F4FFF3 /* HLFUITextExtensions */;
 			targetProxy = 0FFCA7ED73BB26D2BB47CC51427A9FC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -533,6 +537,40 @@
 			};
 			name = Release;
 		};
+		6E98BDCF69A49A199F89793E3D42B46A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E481887FFD222A5A6BBEED0833C027 /* HLFUITextExtensions.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HLFUITextExtensions/HLFUITextExtensions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HLFUITextExtensions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HLFUITextExtensions/HLFUITextExtensions.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HLFUITextExtensions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		707B86CFB21B645E37109F39754D4051 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -577,7 +615,7 @@
 			};
 			name = Release;
 		};
-		9B70A2595AB060F203E32684622AD155 /* Debug */ = {
+		8E46FB3A4AA1C3FAB82B7A60B3FB9013 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5E481887FFD222A5A6BBEED0833C027 /* HLFUITextExtensions.xcconfig */;
 			buildSettings = {
@@ -648,40 +686,6 @@
 			};
 			name = Debug;
 		};
-		EE12522BB75310B4BC55F6D15C030BA3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5E481887FFD222A5A6BBEED0833C027 /* HLFUITextExtensions.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HLFUITextExtensions/HLFUITextExtensions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HLFUITextExtensions/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HLFUITextExtensions/HLFUITextExtensions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = HLFUITextExtensions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -694,20 +698,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A17FC257009E2A282D19E218A3960E15 /* Build configuration list for PBXNativeTarget "HLFUITextExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E46FB3A4AA1C3FAB82B7A60B3FB9013 /* Debug */,
+				6E98BDCF69A49A199F89793E3D42B46A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BD9350EC76DED5DE4CD84A51E4AE7189 /* Build configuration list for PBXNativeTarget "Pods-HLFUITextExtensions_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04DA3DEAA3C33B52B8FC718F8E23EC18 /* Debug */,
 				3CA88D4363F60E702BB0C84CF255775C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C80836B2F244A3FE22763F2797E89389 /* Build configuration list for PBXNativeTarget "HLFUITextExtensions" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9B70A2595AB060F203E32684622AD155 /* Debug */,
-				EE12522BB75310B4BC55F6D15C030BA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
