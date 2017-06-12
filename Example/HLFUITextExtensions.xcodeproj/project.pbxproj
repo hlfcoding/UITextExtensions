@@ -46,7 +46,7 @@
 		B0CD42A3FB71C2F8363F0145 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BBE1317B3D900EDE4D555099 /* Pods-HLFUITextExtensions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLFUITextExtensions_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HLFUITextExtensions_Example/Pods-HLFUITextExtensions_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D4A633ECB060E21640D3CB69 /* Pods-HLFUITextExtensions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLFUITextExtensions_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HLFUITextExtensions_Tests/Pods-HLFUITextExtensions_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F111DDE998B95586265F9D3C /* HLFUITextExtensions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HLFUITextExtensions.podspec; path = ../HLFUITextExtensions.podspec; sourceTree = "<group>"; };
+		F111DDE998B95586265F9D3C /* HLFUITextExtensions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HLFUITextExtensions.podspec; path = ../HLFUITextExtensions.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
