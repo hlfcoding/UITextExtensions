@@ -19,9 +19,39 @@ label.hlf_updateText("Hello, playground. You are looking okay.")
 
 label.hlf_setKerning(-0.5)
 label.hlf_setLineHeight(label.hlf_pointsByEms(1.1))
+// ...
 label.hlf_updateText("Hello, playground. You are looking good.")
 
 let width = label.hlf_pointsByEms(9)
+label.frame.size.width = width
+label.sizeToFit()
+// ...
+```
+
+Compare the above with the (less flexible) below:
+
+```swift
+let label = UILabel()
+label.numberOfLines = 0
+
+var attributes = [String : Any]()
+let font = UIFont.preferredFont(forTextStyle: .title1)
+attributes[NSFontAttributeName] = font
+attributes[NSForegroundColorAttributeName] = UIColor.darkText
+attributes[NSKernAttributeName] = -0.5
+let paragraphStyle = NSMutableParagraphStyle()
+paragraphStyle.alignment = NSTextAlignment.center
+paragraphStyle.maximumLineHeight = round(1.1 * font.pointSize)
+attributes[NSParagraphStyleAttributeName] = paragraphStyle
+label.attributedText = NSAttributedString(
+  string: "Hello, playground. You are looking okay.", attributes: attributes
+)
+// ...
+label.attributedText = NSAttributedString(
+  string: "Hello, playground. You are looking good.", attributes: attributes
+)
+
+let width = round(9 * font.pointSize)
 label.frame.size.width = width
 label.sizeToFit()
 // ...
