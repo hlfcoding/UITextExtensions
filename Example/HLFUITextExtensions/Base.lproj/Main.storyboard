@@ -22,14 +22,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jea-gD-qUF">
-                                <rect key="frame" x="0.0" y="259" width="320" height="50.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jea-gD-qUF">
+                                <rect key="frame" x="0.0" y="191" width="320" height="187.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeU-u0-rUT">
-                                        <rect key="frame" x="27.5" y="0.0" width="265" height="50.5"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L94-U0-kxJ">
+                                        <rect key="frame" x="27" y="27" width="266" height="50.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAX-Im-wa8">
-                                                <rect key="frame" x="15" y="15" width="235" height="20.5"/>
+                                                <rect key="frame" x="15" y="15" width="236" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -37,22 +37,24 @@
                                         </subviews>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailingMargin" secondItem="AB5-dX-owH" secondAttribute="trailing" id="UeW-mg-VmB"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="AB5-dX-owH" secondAttribute="bottom" id="bt6-oB-SFL"/>
-                                            <constraint firstItem="AB5-dX-owH" firstAttribute="top" secondItem="AeU-u0-rUT" secondAttribute="topMargin" id="eG9-X5-Ylt"/>
-                                            <constraint firstItem="AB5-dX-owH" firstAttribute="leading" secondItem="AeU-u0-rUT" secondAttribute="leadingMargin" id="f3Y-Sp-npa"/>
-                                            <constraint firstAttribute="width" constant="265" id="vLU-4b-92T"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="dAX-Im-wa8" secondAttribute="bottom" id="Oyq-Uh-ro0"/>
+                                            <constraint firstItem="dAX-Im-wa8" firstAttribute="leading" secondItem="L94-U0-kxJ" secondAttribute="leadingMargin" id="TEi-IW-xkP"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="dAX-Im-wa8" secondAttribute="trailing" id="q0H-2b-YUu"/>
+                                            <constraint firstItem="dAX-Im-wa8" firstAttribute="top" secondItem="L94-U0-kxJ" secondAttribute="topMargin" id="wbt-9z-htX"/>
                                         </constraints>
                                         <edgeInsets key="layoutMargins" top="15" left="15" bottom="15" right="15"/>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Kib-sa-pr1"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="27" left="27" bottom="27" right="27"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jea-gD-qUF" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="0OU-xA-DWc"/>
-                            <constraint firstAttribute="trailing" secondItem="jea-gD-qUF" secondAttribute="trailing" id="ZYi-5Q-8lT"/>
-                            <constraint firstItem="jea-gD-qUF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="pWp-7d-1Hv"/>
+                            <constraint firstItem="jea-gD-qUF" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="y90-uB-20Q"/>
                         </constraints>
                     </view>
                     <connections>
