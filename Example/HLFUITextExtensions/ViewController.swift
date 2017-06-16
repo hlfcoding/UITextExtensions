@@ -19,9 +19,7 @@ class ViewController: UIViewController {
     }
 
     func setUpLabelExample() {
-        label.backgroundColor = .clear
         label.font = .preferredFont(forTextStyle: .title1)
-        label.numberOfLines = 0
         label.textAlignment = .center
         label.textColor = .darkText
         label.hlf_updateText("Hello, playground. You are looking okay.")
