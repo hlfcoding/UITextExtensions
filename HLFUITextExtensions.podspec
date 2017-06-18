@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
     s.summary          = 'UIKit convenience extensions for text styling.'
     s.description      = 'Supports UILabel, UITextField, and UITextView.'
     s.homepage         = 'https://github.com/hlfcoding/UITextExtensions'
-    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+    s.screenshots      = 'https://user-images.githubusercontent.com/100884/27258670-9f75ec7a-53b5-11e7-8866-b8dff74393ff.png'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'Peng Wang' => 'peng@pengxwang.com' }
     s.source           = { :git => 'https://github.com/hlfcoding/UITextExtensions.git', :tag => s.version.to_s }

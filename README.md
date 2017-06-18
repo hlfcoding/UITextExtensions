@@ -7,6 +7,8 @@
 
 > :label: &nbsp; UIKit convenience extensions for text styling in code.
 
+<img src="https://user-images.githubusercontent.com/100884/27258670-9f75ec7a-53b5-11e7-8866-b8dff74393ff.png" width="320" />
+
 ## Example
 
 ```swift
