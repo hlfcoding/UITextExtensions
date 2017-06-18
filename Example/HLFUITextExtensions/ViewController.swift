@@ -12,6 +12,7 @@ import HLFUITextExtensions
 class ViewController: UIViewController {
 
     @IBOutlet var label: UILabel!
+    @IBOutlet var textField: UITextField!
     @IBOutlet var textView: UITextView!
 
     @IBOutlet var captions: [UILabel]!
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
         captions.forEach() { $0.layer.cornerRadius = 5 }
         containers.forEach() { $0.layer.cornerRadius = 10 }
         setUpLabelExample()
+        setUpTextFieldExample()
         setUpTextViewExample()
     }
 
@@ -35,6 +37,13 @@ class ViewController: UIViewController {
         label.textColor = textColor
         setUpCommonExample(view: label)
         label.sizeToFit()
+    }
+
+    func setUpTextFieldExample() {
+        textField.font = font
+        textField.textAlignment = textAlignment
+        textField.textColor = textColor
+        setUpCommonExample(view: textField)
     }
 
     func setUpTextViewExample() {
@@ -47,10 +56,18 @@ class ViewController: UIViewController {
     }
 
     func setUpCommonExample(view: TextExtensions) {
-        view.hlf_updateText("Hello, playground. You are looking okay.")
-        view.hlf_setKerning(-0.5)
+        let compliment = (okay: "You're looking okay.", good: "You're looking good.")
+        let kerning: CGFloat = -0.5
+        guard !(view is UITextField) else {
+            view.hlf_updateText(compliment.okay)
+            view.hlf_setKerning(kerning)
+            view.hlf_updateText(compliment.good)
+            return
+        }
+        view.hlf_updateText("Hello, playground. \(compliment.okay)")
+        view.hlf_setKerning(kerning)
         view.hlf_setLineHeight(view.hlf_pointsByEms(1.1))
-        view.hlf_updateText("Hello, playground. You are looking good.")
+        view.hlf_updateText("Hello, playground. \(compliment.good)")
     }
 
 }

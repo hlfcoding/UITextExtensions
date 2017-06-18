@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jea-gD-qUF">
-                                <rect key="frame" x="0.0" y="181" width="320" height="207.5"/>
+                                <rect key="frame" x="0.0" y="134.5" width="320" height="300.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L94-U0-kxJ">
                                         <rect key="frame" x="27" y="27" width="266" height="60.5"/>
@@ -88,6 +88,41 @@
                                         </constraints>
                                         <edgeInsets key="layoutMargins" top="20" left="15" bottom="20" right="15"/>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5y-dQ-mJq">
+                                        <rect key="frame" x="27" y="200.5" width="266" height="73"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text Field" placeholder="Text Field" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nBc-Jy-h96">
+                                                <rect key="frame" x="15" y="20" width="236" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="iCI-ts-1Hy"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UITextField" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C23-58-JFx">
+                                                <rect key="frame" x="194" y="-5" width="77" height="20"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="IWu-KR-kT4"/>
+                                                    <constraint firstAttribute="width" constant="77" id="tB4-Zx-OJc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="C23-58-JFx" secondAttribute="trailing" constant="-5" id="1E4-iT-lzF"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="nBc-Jy-h96" secondAttribute="trailing" id="N4U-AK-RZd"/>
+                                            <constraint firstItem="nBc-Jy-h96" firstAttribute="leading" secondItem="x5y-dQ-mJq" secondAttribute="leadingMargin" id="cYF-aV-OWa"/>
+                                            <constraint firstItem="C23-58-JFx" firstAttribute="top" secondItem="x5y-dQ-mJq" secondAttribute="top" constant="-5" id="hpM-vF-HqC"/>
+                                            <constraint firstItem="nBc-Jy-h96" firstAttribute="top" secondItem="x5y-dQ-mJq" secondAttribute="topMargin" id="sS0-7A-hj3"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="nBc-Jy-h96" secondAttribute="bottom" id="uzg-QZ-eqs"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="20" left="15" bottom="20" right="15"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="Kib-sa-pr1"/>
@@ -103,11 +138,14 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="dAX-Im-wa8" id="tdU-Qm-Gh1"/>
+                        <outlet property="textField" destination="nBc-Jy-h96" id="aLC-N5-nH4"/>
                         <outlet property="textView" destination="Fgn-iL-X2e" id="843-7b-eVn"/>
                         <outletCollection property="captions" destination="gFT-hp-F58" collectionClass="NSMutableArray" id="bgF-TD-x64"/>
                         <outletCollection property="captions" destination="jM9-7e-B2A" collectionClass="NSMutableArray" id="dsM-rx-93Z"/>
                         <outletCollection property="containers" destination="L94-U0-kxJ" collectionClass="NSMutableArray" id="Az7-Eh-VUo"/>
                         <outletCollection property="containers" destination="AeU-u0-rUT" collectionClass="NSMutableArray" id="kF8-1P-x0f"/>
+                        <outletCollection property="containers" destination="x5y-dQ-mJq" collectionClass="NSMutableArray" id="byZ-Y3-Lrb"/>
+                        <outletCollection property="captions" destination="C23-58-JFx" collectionClass="NSMutableArray" id="k7H-a4-Jf7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
