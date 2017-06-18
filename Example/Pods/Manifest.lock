@@ -1,5 +1,5 @@
 PODS:
-  - HLFUITextExtensions (0.0.1)
+  - HLFUITextExtensions (0.1.0)
 
 DEPENDENCIES:
   - HLFUITextExtensions (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HLFUITextExtensions: d1f8e311c5cdeda1cc3630193ea89c9f460ee827
+  HLFUITextExtensions: 0d4e507a6a49f5209a62c16dada0ff82778da91a
 
-PODFILE CHECKSUM: 790e23251abdbd49219176aac7907a623e6fdab6
+PODFILE CHECKSUM: d0313634a16eb14a498655310350ea3448e266e5
 
 COCOAPODS: 1.2.1

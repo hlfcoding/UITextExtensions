@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'HLFUITextExtensions'
-    s.version          = '0.0.1'
+    s.version          = '0.1.0'
     s.summary          = 'UIKit convenience extensions for text styling.'
     s.description      = 'Supports UILabel, UITextField, and UITextView.'
     s.homepage         = 'https://github.com/hlfcoding/UITextExtensions'
