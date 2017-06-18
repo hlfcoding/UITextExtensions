@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
     @IBOutlet var textView: UITextView!
 
+    let font: UIFont = .systemFont(ofSize: 27, weight: UIFontWeightLight)
+    let textAlignment: NSTextAlignment = .center
+    let textColor: UIColor = .darkText
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpLabelExample()
@@ -21,30 +25,27 @@ class ViewController: UIViewController {
     }
 
     func setUpLabelExample() {
-        label.font = .preferredFont(forTextStyle: .title1)
-        label.textAlignment = .center
-        label.textColor = .darkText
-        label.hlf_updateText("Hello, playground. You are looking okay.")
-
-        label.hlf_setKerning(-0.5)
-        label.hlf_setLineHeight(label.hlf_pointsByEms(1.1))
-        label.hlf_updateText("Hello, playground. You are looking good.")
-
+        label.font = font
+        label.textAlignment = textAlignment
+        label.textColor = textColor
+        setUpCommonExample(view: label)
         label.sizeToFit()
     }
 
     func setUpTextViewExample() {
-        textView.font = .preferredFont(forTextStyle: .title1)
-        textView.textAlignment = .center
-        textView.textColor = .darkText
+        textView.font = font
+        textView.textAlignment = textAlignment
+        textView.textColor = textColor
         textView.textContainerInset = UIEdgeInsets(top: 0, left: -4, bottom: 0, right: -4)
-        textView.hlf_updateText("Hello, playground. You are looking okay.")
-
-        textView.hlf_setKerning(-0.5)
-        textView.hlf_setLineHeight(label.hlf_pointsByEms(1.1))
-        textView.hlf_updateText("Hello, playground. You are looking good.")
-
+        setUpCommonExample(view: textView)
         textView.sizeToFit()
+    }
+
+    func setUpCommonExample(view: TextExtensions) {
+        view.hlf_updateText("Hello, playground. You are looking okay.")
+        view.hlf_setKerning(-0.5)
+        view.hlf_setLineHeight(view.hlf_pointsByEms(1.1))
+        view.hlf_updateText("Hello, playground. You are looking good.")
     }
 
 }

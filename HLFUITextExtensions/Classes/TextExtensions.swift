@@ -6,7 +6,7 @@
 //  Copyright (c) 2017 Peng Wang. All rights reserved.
 //
 
-protocol TextExtensions: class {
+public protocol TextExtensions: class {
 
     var hlf_attributedText: NSAttributedString? { get set }
     var hlf_text: String? { get set }
