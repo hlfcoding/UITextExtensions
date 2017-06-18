@@ -14,12 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
     @IBOutlet var textView: UITextView!
 
+    @IBOutlet var captions: [UILabel]!
+
     let font: UIFont = .systemFont(ofSize: 27, weight: UIFontWeightLight)
     let textAlignment: NSTextAlignment = .center
     let textColor: UIColor = .darkText
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        captions.forEach() { $0.layer.cornerRadius = 5 }
         setUpLabelExample()
         setUpTextViewExample()
     }
