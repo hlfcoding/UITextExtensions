@@ -106,6 +106,8 @@
                         <outlet property="textView" destination="Fgn-iL-X2e" id="843-7b-eVn"/>
                         <outletCollection property="captions" destination="gFT-hp-F58" collectionClass="NSMutableArray" id="bgF-TD-x64"/>
                         <outletCollection property="captions" destination="jM9-7e-B2A" collectionClass="NSMutableArray" id="dsM-rx-93Z"/>
+                        <outletCollection property="containers" destination="L94-U0-kxJ" collectionClass="NSMutableArray" id="Az7-Eh-VUo"/>
+                        <outletCollection property="containers" destination="AeU-u0-rUT" collectionClass="NSMutableArray" id="kF8-1P-x0f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

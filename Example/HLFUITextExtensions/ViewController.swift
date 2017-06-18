@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var textView: UITextView!
 
     @IBOutlet var captions: [UILabel]!
+    @IBOutlet var containers: [UIView]!
 
     let font: UIFont = .systemFont(ofSize: 27, weight: UIFontWeightLight)
     let textAlignment: NSTextAlignment = .center
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         captions.forEach() { $0.layer.cornerRadius = 5 }
+        containers.forEach() { $0.layer.cornerRadius = 10 }
         setUpLabelExample()
         setUpTextViewExample()
     }
