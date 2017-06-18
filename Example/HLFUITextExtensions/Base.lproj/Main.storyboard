@@ -44,6 +44,24 @@
                                         </constraints>
                                         <edgeInsets key="layoutMargins" top="15" left="15" bottom="15" right="15"/>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeU-u0-rUT">
+                                        <rect key="frame" x="27" y="97.5" width="266" height="63"/>
+                                        <subviews>
+                                            <textView opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Text View" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgn-iL-X2e">
+                                                <rect key="frame" x="15" y="15" width="236" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Fgn-iL-X2e" secondAttribute="bottom" id="4bn-G6-W4E"/>
+                                            <constraint firstItem="Fgn-iL-X2e" firstAttribute="leading" secondItem="AeU-u0-rUT" secondAttribute="leadingMargin" id="Mme-ZI-LIz"/>
+                                            <constraint firstItem="Fgn-iL-X2e" firstAttribute="top" secondItem="AeU-u0-rUT" secondAttribute="topMargin" id="Vly-wP-b5d"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Fgn-iL-X2e" secondAttribute="trailing" id="krb-Zx-Hvo"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="15" left="15" bottom="15" right="15"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="Kib-sa-pr1"/>
@@ -59,6 +77,7 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="dAX-Im-wa8" id="tdU-Qm-Gh1"/>
+                        <outlet property="textView" destination="Fgn-iL-X2e" id="843-7b-eVn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -8,12 +8,13 @@
 
 protocol TextExtensions: class {
 
-    var attributedText: NSAttributedString? { get set }
-    var text: String? { get set }
+    var hlf_attributedText: NSAttributedString? { get set }
+    var hlf_text: String? { get set }
 
-    var font: UIFont! { get set }
-    var textAlignment: NSTextAlignment { get set }
-    var textColor: UIColor! { get set }
+    var hlf_font: UIFont? { get }
+    var hlf_textColor: UIColor? { get }
+
+    var textAlignment: NSTextAlignment { get }
 
     func hlf_attributesFromProperties() -> [String : Any]
     func hlf_pointsByEms(_ ems: CGFloat) -> CGFloat
@@ -25,11 +26,59 @@ protocol TextExtensions: class {
 
 extension TextExtensions {
 
+    public var hlf_attributedText: NSAttributedString? {
+        get {
+            switch self {
+            case let label as UILabel: return label.attributedText
+            case let textView as UITextView: return textView.attributedText
+            default: return nil
+            }
+        }
+        set {
+            switch self {
+            case let label as UILabel: label.attributedText = newValue
+            case let textView as UITextView: textView.attributedText = newValue
+            default: break
+            }
+        }
+    }
+    public var hlf_text: String? {
+        get {
+            switch self {
+            case let label as UILabel: return label.text
+            case let textView as UITextView: return textView.text
+            default: return nil
+            }
+        }
+        set {
+            switch self {
+            case let label as UILabel: label.text = newValue
+            case let textView as UITextView: textView.text = newValue
+            default: break
+            }
+        }
+    }
+
+    public var hlf_font: UIFont? {
+        switch self {
+        case let label as UILabel: return label.font
+        case let textView as UITextView: return textView.font
+        default: return nil
+        }
+    }
+    public var hlf_textColor: UIColor? {
+        switch self {
+        case let label as UILabel: return label.textColor
+        case let textView as UITextView: return textView.textColor
+        default: return nil
+        }
+    }
+
     public func hlf_attributesFromProperties() -> [String : Any] {
-        var attributes = attributedText?.attributes(at: 0, effectiveRange: nil)
+        var attributes = hlf_attributedText?.attributes(at: 0, effectiveRange: nil)
             ?? [String : Any]()
-        attributes[NSFontAttributeName] = font
-        attributes[NSForegroundColorAttributeName] = textColor
+        attributes[NSFontAttributeName] = hlf_font
+        attributes[NSForegroundColorAttributeName] = hlf_textColor
         let paragraphStyle = (
                 attributes[NSParagraphStyleAttributeName] as? NSParagraphStyle
             )?.mutableCopy() as? NSMutableParagraphStyle
@@ -40,35 +89,38 @@ extension TextExtensions {
     }
 
     public func hlf_pointsByEms(_ ems: CGFloat) -> CGFloat {
+        guard let font = hlf_font else { return 0 }
         return round(ems * font.pointSize)
     }
 
     public func hlf_setKerning(_ points: CGFloat) {
-        guard let text = text else { return assertionFailure() }
+        guard let text = hlf_text else { return assertionFailure() }
         var attributes = hlf_attributesFromProperties()
         attributes[NSKernAttributeName] = points
-        attributedText = NSAttributedString(string: text, attributes: attributes)
+        hlf_attributedText = NSAttributedString(string: text, attributes: attributes)
     }
 
     public func hlf_setLineHeight(_ points: CGFloat) {
-        guard let text = text else { return assertionFailure() }
+        guard let text = hlf_text else { return assertionFailure() }
         var attributes = hlf_attributesFromProperties()
         let paragraphStyle = attributes[NSParagraphStyleAttributeName]
             as! NSMutableParagraphStyle
         paragraphStyle.maximumLineHeight = points
         attributes[NSParagraphStyleAttributeName] = paragraphStyle
-        attributedText = NSAttributedString(string: text, attributes: attributes)
+        hlf_attributedText = NSAttributedString(string: text, attributes: attributes)
     }
 
     public func hlf_updateText(_ text: String) {
-        guard attributedText != nil else {
-            self.text = text
+        guard hlf_attributedText != nil else {
+            self.hlf_text = text
             return
         }
         let attributes = hlf_attributesFromProperties()
-        attributedText = NSAttributedString(string: text, attributes: attributes)
+        hlf_attributedText = NSAttributedString(string: text, attributes: attributes)
     }
 
 }
 
 extension UILabel: TextExtensions {}
+
+extension UITextView: TextExtensions {}
