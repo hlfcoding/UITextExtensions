@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/HLFUITextExtensions.svg?style=flat)](http://cocoapods.org/pods/HLFUITextExtensions)
 [![License](https://img.shields.io/cocoapods/l/HLFUITextExtensions.svg?style=flat)](http://cocoapods.org/pods/HLFUITextExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/HLFUITextExtensions.svg?style=flat)](http://cocoapods.org/pods/HLFUITextExtensions)
+[![Code Climate](https://codeclimate.com/github/hlfcoding/UITextExtensions/badges/gpa.svg)](https://codeclimate.com/github/hlfcoding/UITextExtensions)
 
 > :label: &nbsp; UIKit convenience extensions for text styling in code.
 
